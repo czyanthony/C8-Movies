@@ -32,11 +32,14 @@ public class MovieDriver
        
        MovieListAL movieList = new MovieListAL(movieArray);
        
-       ArrayList<Movie> highestRated = movieList.findHighestRatedByStudio();
-       for (int i=0 ; i<highestRated.size() ; i++)
-           System.out.println(highestRated.get(i));
+       //ArrayList<Movie> highestRated = movieList.findHighestRatedByStudio();
+       //for (int i=0 ; i<highestRated.size() ; i++)
+           //System.out.println(highestRated.get(i));
        
-       
+           System.out.println(movieList.getByStudio("Disney"));
+           System.out.println(movieList.getHighestrating
+           (movieList.getByStudio("Ghibli")));
+           System.out.println(movieList.findHighestRatedByStudio());
 
         
     }
